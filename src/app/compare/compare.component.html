@@ -1,0 +1,63 @@
+<br>
+
+<h4>Select 2 phones to Compare them</h4>
+<mat-form-field>
+  <mat-label>Select 1st Smartphone</mat-label>
+  <mat-select [formControl]="firstControl" required>
+    <mat-option>--</mat-option>
+    <mat-option *ngFor="let phone of phones" [value]="phone">
+      {{phone.name}}
+    </mat-option>
+  </mat-select>
+  <mat-error *ngIf="firstControl.hasError('required')" >Please choose a phone</mat-error>
+  <mat-error *ngIf="firstControl.value == secondControl.value" >Please choose a different phone</mat-error>
+  <mat-hint>{{firstControl.value?.name}}</mat-hint>
+</mat-form-field>
+<br>
+<mat-form-field>
+  <mat-label>Select 2nd Smartphone</mat-label>
+  <mat-select [formControl]="secondControl" required>
+    <mat-option>--</mat-option>
+    <mat-option *ngFor="let phone of phones" [value]="phone">
+      {{phone.name}}
+    </mat-option>
+  </mat-select>
+  <mat-error *ngIf="secondControl.hasError('required')">Please choose an animal</mat-error>
+  <mat-error *ngIf="firstControl.value == secondControl.value" >Please choose a different phone</mat-error>
+  <mat-hint>{{secondControl.value?.name}}</mat-hint>
+</mat-form-field>
+<br>
+<button mat-raised-button (click)="comparePhones(firstControl.value,secondControl.value)">Compare</button>
+<br>
+<div class="itemone">
+<ul *ngIf="myBool" >
+  <li>Name: {{phones[phoneOneId].name}}</li>
+   <li>Cpu: {{phones[phoneOneId].cpu}}</li>
+   <li>Number Of Cameras: {{phones[phoneOneId].numberOfCams}}</li>
+   <li>Main Camera: {{phones[phoneOneId].mainCamera}}</li>
+   <li>Secondary Camera: {{phones[phoneOneId].secondaryCamera}}</li>
+   <li>Third Camera: {{phones[phoneOneId].thirdCamera}}</li>
+   <li>Battery: {{phones[phoneOneId].Battery}}</li>
+</ul>
+</div>
+<div class="itemone">
+<ul *ngIf="myBool" class="itemtwo">
+  <li>Name: {{phones[phoneTwoId].name}}</li>
+   <li>Cpu: {{phones[phoneTwoId].cpu}}</li>
+   <li>Number Of Cameras: {{phones[phoneTwoId].numberOfCams}}</li>
+   <li>Main Camera: {{phones[phoneTwoId].mainCamera}}</li>
+   <li>Secondary Camera: {{phones[phoneTwoId].secondaryCamera}}</li>
+   <li>Third Camera: {{phones[phoneTwoId].thirdCamera}}</li>
+   <li>Battery: {{phones[phoneTwoId].Battery}}</li>
+</ul>
+</div>
+<div class="itemone">
+  <ul *ngIf="myBool" class="itemtwo">
+    <li>BestPhone: {{bestPhone.name}}</li>
+     <li>Number Of Cameras: {{bestPhone.numberOfCams}} </li>
+     <li>Main Camera: {{bestPhone.mainCamera}}</li>
+     <li>Secondary Camera: {{bestPhone.secondaryCamera}}</li>
+     <li>Third Camera: {{bestPhone.thirdCamera}}</li>
+     <li>Battery: {{bestPhone.Battery}}</li>
+  </ul>
+  </div>

@@ -1,0 +1,47 @@
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgba(255, 51, 238, 0.918);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  font-size: 115%;
+  font-family: arial;
+  font-weight: bold;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: rgba(255, 0, 242, 0.39);
+  transition-duration: 0.3s;
+}
+.active{
+  background-color: rgba(255, 0, 242, 0.39);
+}
+.ad-left {
+  float: left;
+}
+
+.ad-right {
+  float: right;
+  margin-left: 10px;
+}
+
+.entire-thing {
+  width: 650px;
+}
