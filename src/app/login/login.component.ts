@@ -1,6 +1,6 @@
-import { Component, OnInit, EventEmitter, Output } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import {Router} from '@angular/router';
-import {MatDialog} from '@angular/material'
+
 import { LoginService } from '../login.service';
 @Component({
   selector: 'app-login',
@@ -9,8 +9,10 @@ import { LoginService } from '../login.service';
 })
 
 export class LoginComponent implements OnInit {
+
   public logincredentials = []
   public msg;
+ 
   constructor(private router: Router, private loginService: LoginService) { }
   ngOnInit() {
     this.loginService.getLogin().subscribe(data => this.logincredentials = data);

@@ -31,6 +31,7 @@
 <br>
 <div class="itemone">
 <ul *ngIf="myBool" >
+  <h3>Phone number 1</h3>
   <li>Name: {{phones[phoneOneId].name}}</li>
    <li>Cpu: {{phones[phoneOneId].cpu}}</li>
    <li>Number Of Cameras: {{phones[phoneOneId].numberOfCams}}</li>
@@ -42,6 +43,7 @@
 </div>
 <div class="itemone">
 <ul *ngIf="myBool" class="itemtwo">
+    <h3>Phone number 2</h3>
   <li>Name: {{phones[phoneTwoId].name}}</li>
    <li>Cpu: {{phones[phoneTwoId].cpu}}</li>
    <li>Number Of Cameras: {{phones[phoneTwoId].numberOfCams}}</li>
@@ -53,6 +55,7 @@
 </div>
 <div class="itemone">
   <ul *ngIf="myBool" class="itemtwo">
+      <h3>Results</h3>
     <li>BestPhone: {{bestPhone.name}}</li>
      <li>Number Of Cameras: {{bestPhone.numberOfCams}} </li>
      <li>Main Camera: {{bestPhone.mainCamera}}</li>

@@ -3,6 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import {Ilogin} from '../assets/data/login';
 import { map } from 'rxjs/operators';
 import { Observable } from 'rxjs/Observable';
+import { routerNgProbeToken } from '@angular/router/src/router_module';
 @Injectable({
   providedIn: 'root'
 })
@@ -24,6 +25,11 @@ export class LoginService {
     else{
       return false;
     }
+ }
+
+ logout(){
+   localStorage.clear();
+   
  }
 
 }
