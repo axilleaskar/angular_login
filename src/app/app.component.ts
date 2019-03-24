@@ -14,6 +14,7 @@ export class AppComponent {
     this.service.logout();
     this.route.navigate(['']);
   }
+ 
 }
 
 

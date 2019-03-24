@@ -1,20 +1,18 @@
-<mat-toolbar>
-  <span>LOGIN</span>
-</mat-toolbar>
-<mat-card >
+
+<mat-card class="item">
    <mat-card-content>
       <form >
-         <mat-form-field >
-            <mat-label>Username</mat-label>
-            <input  matInput  placeholder="Username" #p1>
-         </mat-form-field>
-         <mat-form-field >
-            <mat-label>Password</mat-label>
+         <mat-form-field color="accent" class="username" appearance="outline">
+            <mat-label >Username</mat-label>
+            <input class="username" matInput  placeholder="Username" #p1>
+         </mat-form-field><br>
+         <mat-form-field color="accent" class="password" appearance="outline">
+            <mat-label class="password">Password</mat-label>
             <input  matInput  placeholder="Password" #p2>
          </mat-form-field>
       </form>
    </mat-card-content>
    <mat-card-actions>
-      <button mat-raised-button (click)="check(p1.value,p2.value)" >LOGIN</button>
+      <button mat-raised-button color="accent" (click)="check(p1.value,p2.value)" class="button">LOGIN</button>
    </mat-card-actions>
 </mat-card>
