@@ -1,11 +1,11 @@
 
-<mat-list *ngIf="clickedBool">
+<mat-list class="one" *ngIf="clickedBool">
     <mat-divider></mat-divider>
-  <mat-list-item> Name: {{phones[phoneId].name}} </mat-list-item>
+  <mat-list-item class="one"> Name: {{phones[phoneId].name}} </mat-list-item>
   <mat-divider></mat-divider>
-  <mat-list-item> Cpu: {{phones[phoneId].cpu}} </mat-list-item>
+  <mat-list-item class="two"> Cpu: {{phones[phoneId].cpu}} </mat-list-item>
   <mat-divider></mat-divider>
-  <mat-list-item> Number Of Cameras: {{phones[phoneId].numberOfCams}} </mat-list-item>
+  <mat-list-item class = "three"> Number Of Cameras: {{phones[phoneId].numberOfCams}} </mat-list-item>
   <mat-divider></mat-divider>
   <mat-list-item> Main Camera: {{phones[phoneId].mainCamera}} </mat-list-item>
   <mat-divider></mat-divider>

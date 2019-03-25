@@ -1,18 +1,13 @@
 .item{
-    
 position: center;
 width: 400px;
 height: 220px;
 left:50%;
 margin-left: -200px;
-
 top:50%;
 margin-top:110px;
-
 border: 3px solid #ff4081;
-
-background:#ff408023;
-border-radius: 25px;
+ animation: slide-bottom 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 .button {
 width: 100%;
@@ -24,3 +19,17 @@ margin-left: 100px;
 .username{
     width:100%;
 }
+.button{
+    font-style: bold;
+    font-family: arial;
+}
+@keyframes slide-bottom {
+    0% {
+        transform: translateY(0);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(100px);
+        opacity:1;
+      }
+    }

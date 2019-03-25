@@ -1,8 +1,8 @@
 <p>
   home works!
 </p>
-<mat-list >
-  <mat-list-item *ngFor = "let phone of phones" ><mat-radio-button value="1" (click)="selectPhone(phone)">{{phone.name}}</mat-radio-button></mat-list-item>
+<mat-list>
+  <mat-list-item  *ngFor = "let phone of phones" ><mat-radio-button class="picks" value="1" (click)="selectPhone(phone)">{{phone.name}}</mat-radio-button></mat-list-item>
 </mat-list>
 
 <app-details [phoneId]="phoneId" [clickedBool]="clickedBool" ></app-details>

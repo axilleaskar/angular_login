@@ -98,6 +98,10 @@ export class CompareComponent implements OnInit {
       }else {
         this.bestPhone.name = "Both " + phoneone.name + " and " + phonetwo.name + " are pretty good."
       }
+      
+      this.counterone=0;
+      this.countertwo=0;
+
 
 
     }else{alert("Select two different Phones");
