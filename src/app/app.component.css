@@ -3,7 +3,7 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #ff4081;
+  background-color: #673ab7;
   position: fixed;
   top: 0;
   left: 0;
@@ -27,11 +27,11 @@ li a {
 
 /* Change the link color to #111 (black) on hover */
 li a:hover {
-  background-color: #fd2f74;
+  background-color: #5e2cb6;
   transition-duration: 0.3s;
 }
 .active{
-  background-color:#fd2f74;
+  background-color:#5e2cb6;
 }
 .ad-left {
   float: left;

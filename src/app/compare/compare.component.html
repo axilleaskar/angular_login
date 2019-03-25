@@ -2,7 +2,7 @@
 <mat-card class="item">
 
 <h4>Select 2 phones to Compare them</h4>
-<mat-form-field color="accent" class="password">
+<mat-form-field color="primary" class="password">
   <mat-label>Select 1st Smartphone</mat-label>
   <mat-select [formControl]="firstControl" required>
     <mat-option>--</mat-option>
@@ -15,7 +15,7 @@
   <mat-hint>{{firstControl.value?.name}}</mat-hint>
 </mat-form-field>
 <br>
-<mat-form-field color="accent" class="password">
+<mat-form-field color="primary" class="password">
   <mat-label >Select 2nd Smartphone</mat-label>
   <mat-select [formControl]="secondControl" required>
     <mat-option>--</mat-option>
@@ -28,7 +28,7 @@
   <mat-hint>{{secondControl.value?.name}}</mat-hint>
 </mat-form-field>
 <br>
-<button color="accent" mat-raised-button (click)="comparePhones(firstControl.value,secondControl.value)" class="password">Compare</button>
+<button color="primary" mat-raised-button (click)="comparePhones(firstControl.value,secondControl.value)" class="password">Compare</button>
 </mat-card>
 <mat-divider color="accent" style="margin-top: 110px"></mat-divider>
 <div class="itemone">

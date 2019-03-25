@@ -2,17 +2,17 @@
 <mat-card class="item">
    <mat-card-content>
       <form >
-         <mat-form-field color="accent" class="username" appearance="outline">
+         <mat-form-field color="primary" class="username" appearance="outline">
             <mat-label >Username</mat-label>
             <input class="username" matInput  placeholder="Username" #p1>
          </mat-form-field><br>
-         <mat-form-field color="accent" class="password" appearance="outline">
+         <mat-form-field color="primary" class="password" appearance="outline">
             <mat-label class="password">Password</mat-label>
             <input  matInput  placeholder="Password" #p2>
          </mat-form-field>
       </form>
    </mat-card-content>
    <mat-card-actions>
-      <button mat-raised-button color="accent" (click)="check(p1.value,p2.value)" class="button">LOGIN</button>
+      <button mat-raised-button color="primary" (click)="check(p1.value,p2.value)" class="button">LOGIN</button>
    </mat-card-actions>
 </mat-card>
