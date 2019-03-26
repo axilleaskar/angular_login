@@ -30,9 +30,9 @@
 <br>
 <button color="primary" mat-raised-button (click)="comparePhones(firstControl.value,secondControl.value)" class="password">Compare</button>
 </mat-card>
-<mat-divider color="accent" style="margin-top: 110px"></mat-divider>
-<div class="itemone">
-<ul *ngIf="myBool" >
+
+<div *ngIf="myBool" class="itemone" >
+<ul   class="w3-ul w3-border">
   <h3>Phone number 1</h3>
   <li>Name: {{phones[phoneOneId].name}}</li>
    <li>Cpu: {{phones[phoneOneId].cpu}}</li>
@@ -43,8 +43,8 @@
    <li>Battery: {{phones[phoneOneId].Battery}}</li>
 </ul>
 </div>
-<div class="itemone">
-<ul *ngIf="myBool" class="itemtwo">
+<div class="itemone" *ngIf="myBool">
+<ul  class="w3-ul w3-border">
     <h3>Phone number 2</h3>
   <li>Name: {{phones[phoneTwoId].name}}</li>
    <li>Cpu: {{phones[phoneTwoId].cpu}}</li>
@@ -55,9 +55,10 @@
    <li>Battery: {{phones[phoneTwoId].Battery}}</li>
 </ul>
 </div>
-<div class="itemone">
-  <ul *ngIf="myBool" class="itemtwo">
-      <h3>Results</h3>
+
+<div class="itemone" *ngIf="myBool">
+  <ul  class="w3-ul w3-border">
+      <h3 style="text-weight: bold">Results</h3>
     <li>BestPhone: {{bestPhone.name}}</li>
      <li>Number Of Cameras: {{bestPhone.numberOfCams}} </li>
      <li>Main Camera: {{bestPhone.mainCamera}}</li>
@@ -66,3 +67,4 @@
      <li>Battery: {{bestPhone.Battery}}</li>
   </ul>
   </div>
+
