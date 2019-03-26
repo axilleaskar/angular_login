@@ -2,8 +2,8 @@
     
     width: 340px;
     height: 230px;
-    left:10%;
-    margin-top: 50px;
+    left:12.9%;
+    margin-top: 80px;
     margin-left: -200px;
     
     
@@ -36,7 +36,25 @@
     margin-top: 10px;
     border: 3px solid #673ab7;
     border-radius: 4px;
+    animation: slide-right 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
+.itemtwo{
+    float:left;
+    margin-left: 20px;
+    margin-top: 10px;
+    border: 3px solid #673ab7;
+    border-radius: 4px;
+    animation: slide-right 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+.itemthree{
+    float:left;
+    margin-left: 20px;
+    margin-top: 10px;
+    border: 3px solid #673ab7;
+    border-radius: 4px;
+    animation: slide-right 0.45s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
 h3 {
     text-align: center;
     font-weight: 700;
